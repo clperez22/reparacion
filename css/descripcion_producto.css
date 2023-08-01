@@ -1,0 +1,12 @@
+.descripcion_del_producto{
+    max-width: 100%;
+    padding: 5srem;
+    margin: auto;
+    background-color: rgb(199, 120, 120);
+    border: 1px solid black;
+}
+.seccionhola{
+    background-color: aqua;
+    width: 5rem;
+    height: 5rem;
+}
