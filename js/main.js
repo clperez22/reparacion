@@ -25,20 +25,38 @@ main_DOM.appendChild(item);
 
 
 //ver detalles del producto
-
 let productos = document.querySelectorAll(".item");
 
-function saludar (){
-    let caja_descrpcion_DOM = document.querySelector(".descripcion_del_producto");
-    caja_descrpcion_DOM.innerHTML = caja_descrpcion;
+function mostrarPasos(titulo, imagen, descripcion, herramientas, pasos) {
+    let cajaItemDOM = document.querySelector(".item");
+    let cajaDescripcionDOM = document.querySelector(".descripcion_del_producto");
+    let imagenProductoDOM = document.querySelector(".imagen_del_producto");
+    let nombreProductoDOM = document.querySelector(".nombre_del_producto");
+    
+    let herramientasProductoDOM = document.querySelector(".herramientas_del_producto");
+    let pasosProductoDOM = document.querySelector(".pasos_del_producto");
+
+    nombreProductoDOM.textContent = titulo;
+    imagenProductoDOM.src = imagen;
+    cajaDescripcionDOM.textContent = descripcion;
+
+    herramientasProductoDOM.innerHTML = herramientas.map(herramienta => `<p>${herramienta}</p>`).join("");
+    pasosProductoDOM.innerHTML = pasos.map(paso => `<p>${paso}</p>`).join("");
+
+    cajaItemDOM.classList.add("mostrar"); // Mostrar la caja "item" al hacer clic
 }
 
+productos.forEach((cadaElemento, index) => {
+    cadaElemento.addEventListener("click", () => {
+        let titulo = data[index].titulo;
+        let imagen = data[index].img;
+        let descripcion = data[index].descripcion;
+        
+        let herramientas = data[index].herramientas || [];
+        let pasos = data[index].pasos || [];
 
-productos.forEach((cada_elemento)=>{
-
-    console.log(cada_elemento);
-
-    cada_elemento.addEventListener("click",saludar );
-})
+        mostrarPasos(titulo, imagen, descripcion, herramientas, pasos);
+    });
+});
 
 
