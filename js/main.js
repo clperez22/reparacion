@@ -3,7 +3,7 @@ import { data } from "./data.js";
 import { caja_descrpcion } from "./descripcion_producto.js";
 
 
-let main_DOM = document.querySelector("#main");
+let main_DOM = document.querySelector(".main");
 
 data.forEach((cada_item)=>{ 
     let item = document.createElement("div");
@@ -24,6 +24,8 @@ main_DOM.appendChild(item);
 });
 
 
+
+
 //ver detalles del producto
 let productos = document.querySelectorAll(".item");
 
@@ -40,10 +42,12 @@ function mostrarPasos(titulo, imagen, descripcion, herramientas, pasos) {
     imagenProductoDOM.src = imagen;
     cajaDescripcionDOM.textContent = descripcion;
 
-    herramientasProductoDOM.innerHTML = herramientas.map(herramienta => `<p>${herramienta}</p>`).join("");
+    herramientasProductoDOM.innerHTML = herramientas.map(herramienta =>  `<p>${herramienta}</p>`).join("");
+   
     pasosProductoDOM.innerHTML = pasos.map(paso => `<p>${paso}</p>`).join("");
 
     cajaItemDOM.classList.add("mostrar"); // Mostrar la caja "item" al hacer clic
+   
 }
 
 productos.forEach((cadaElemento, index) => {
@@ -56,7 +60,12 @@ productos.forEach((cadaElemento, index) => {
         let pasos = data[index].pasos || [];
 
         mostrarPasos(titulo, imagen, descripcion, herramientas, pasos);
-    });
-});
+        let main = document.querySelector(".main");
 
+        main.classList.add("ocultar");
+
+
+    });
+    
+});
 

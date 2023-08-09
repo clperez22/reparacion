@@ -1,6 +1,7 @@
 export let data = [
 
     {
+        id: 1,
         titulo: "Cambio de pasta termica",
         precio: 100,
         img: "https://laelectronica.com.gt/image/cache/catalog/Productos/Soldadura/Pasta-Disipadora-TMC-30g-1200x1200.jpg", 
@@ -22,6 +23,7 @@ export let data = [
         ]
     },
     {
+        id:2,
         titulo: "Instalación de disipador de calor para CPU",
         precio: 100,
         img: "https://hardzone.es/app/uploads-hardzone.es/2019/04/Intel-Stock-cooler-04.jpg?x=480&y=375&quality=40",
@@ -45,6 +47,7 @@ export let data = [
     },
     
     {
+        id:3,
         titulo: "Limpieza de ventiladores de la CPU",
         precio: 100,
         img: "https://acf.geeknetic.es/imgw/imagenes/Tutoriales/2021/2144-limpieza-bequiet/2144-limpieza-bequiet-12.jpg?f=webp",
@@ -67,6 +70,7 @@ export let data = [
         ]
     },
     {
+        id:4,
         titulo: "Guía de overclocking del procesador",
         precio: 100,
         img: "https://www.hd-tecnologia.com/imagenes/articulos/2015/07/Skylake-i7-6700K-alcanza-los-52-GHz-por-Aire.jpg", 
@@ -88,6 +92,7 @@ export let data = [
     },
     
     {
+        id:5,
         titulo: "Guía de montaje de un ordenador desde cero",
         precio: 100,
         img: "https://storage-asset.msi.com/event/2021/cnd/how-to-build-a-pc/images//pc_0.png", 
@@ -113,6 +118,7 @@ export let data = [
   
     
     {
+        id:6,
         titulo: "Guía de ensamblaje de sistema de refrigeración líquida",
         precio: 100,
         img: "https://ibertronica.es/blog/wp-content/uploads/2013/01/Corsair-presenta-su-linea-de-refrigeracion-liquida-personalizada-Hydro-X.jpg", 
@@ -140,6 +146,7 @@ export let data = [
     },
     
     {
+        id:7,
         titulo: "Guía de limpieza del interior del PC",
         precio: 100,
         img: "https://www.profesionalreview.com/wp-content/uploads/2016/09/Limpiar-PC-Limpieza-1280x720.jpg", 
@@ -163,6 +170,7 @@ export let data = [
     },
     
     {
+        id:8,
         titulo: "Instalación de módulos de RAM",
         precio: 100,
         img: "https://hardzone.es/app/uploads-hardzone.es/2019/11/Instalar-RAM-1200x675.jpg", 
@@ -183,6 +191,7 @@ export let data = [
         ]
     },
     {
+        id:9,
         titulo: "Guía de desmontaje de la tarjeta gráfica",
         precio: 100,
         img: "https://manuals.plus/wp-content/uploads/2022/11/kf-img-Copy.png", 
@@ -208,6 +217,7 @@ export let data = [
     },
     
     {
+        id:10,
         titulo: "Guía de optimización de la gestión de cables",
         precio: 100,
         img: "https://www.dintek.com.tw/es/images/easyblog_articles/149/b2ap3_large_Structured-Cabling-System-pic-March-2023.jpg", 

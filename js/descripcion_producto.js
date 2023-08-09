@@ -4,4 +4,3 @@ export let caja_descrpcion = `
 <h3 class="titulo_producto">Pasos</h3>
 <div class="pasos_del_producto"></div>
 `;
-
